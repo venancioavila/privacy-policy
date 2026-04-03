@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidade do app Localia">
+  <title>Política de Privacidade | Localia</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --surface-soft: #eef3f0;
+      --text: #1f2933;
+      --muted: #52606d;
+      --line: #d9e2ec;
+      --brand: #1f6f5f;
+      --brand-soft: #dff3ed;
+      --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --radius-sm: 10px;
+      --max-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(31, 111, 95, 0.10), transparent 28%),
+        linear-gradient(180deg, #f8fbfa 0%, var(--bg) 100%);
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, #12352e 0%, #1f6f5f 100%);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 40px 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      margin: 16px 0 0;
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .update-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 22px;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-weight: 600;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .card,
+    .toc {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(217, 226, 236, 0.7);
+    }
+
+    .toc {
+      padding: 22px;
+    }
+
+    .toc h2 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .toc a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .toc a:hover,
+    .toc a:focus {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 28px;
+    }
+
+    section + section {
+      margin-top: 28px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      color: #183640;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--text);
+    }
+
+    strong {
+      color: #102a43;
+    }
+
+    .note {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--brand);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      background: var(--surface-soft);
+      color: #24404a;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 28px;
+      padding-top: 8px;
+    }
+
+    @media (min-width: 860px) {
+      .layout {
+        grid-template-columns: 280px 1fr;
+        align-items: start;
+      }
+
+      .toc {
+        position: sticky;
+        top: 24px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, var(--max-width));
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      .hero {
+        padding: 28px 20px;
+      }
+
+      .content,
+      .toc {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <span class="eyebrow">Localia</span>
+      <h1>Política de Privacidade</h1>
+      <p class="subtitle">
+        Esta Política de Privacidade explica, de forma clara e objetiva, como o app Localia trata informações relacionadas ao uso do aplicativo, incluindo recursos com processamento local e funcionalidades apoiadas por modelos de IA executados no próprio dispositivo.
+      </p>
+      <div class="update-box" aria-label="Última atualização">
+        <span>Última atualização:</span>
+        <time datetime="2026-04-03">03 de abril de 2026</time>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="toc" aria-label="Índice da política">
+        <h2>Nesta página</h2>
+        <ul>
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#dados-coletados">Dados coletados</a></li>
+          <li><a href="#uso-dos-dados">Como os dados são usados</a></li>
+          <li><a href="#armazenamento-local">Armazenamento local no dispositivo</a></li>
+          <li><a href="#ia-local">Modelos de IA executados localmente</a></li>
+          <li><a href="#permissoes">Permissões do app</a></li>
+          <li><a href="#compartilhamento">Compartilhamento de dados</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
+          <li><a href="#direitos">Direitos do usuário</a></li>
+          <li><a href="#retencao">Retenção e exclusão de dados</a></li>
+          <li><a href="#alteracoes">Alterações nesta política</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <article class="card content">
+        <section id="introducao">
+          <h2>Introdução</h2>
+          <p>
+            O <strong>Localia</strong> foi desenvolvido com foco em experiências que podem incluir processamento local no dispositivo, inclusive com uso de modelos de inteligência artificial executados no próprio aparelho. Esta política descreve, em linhas gerais, como informações podem ser tratadas durante o uso do app.
+          </p>
+          <p>
+            O conteúdo desta página tem caráter informativo e busca refletir o funcionamento esperado do produto de forma cuidadosa e transparente. Como recursos técnicos podem evoluir com o tempo, alguns comportamentos podem variar conforme a versão do app, o dispositivo utilizado e as permissões concedidas por você.
+          </p>
+        </section>
+
+        <section id="dados-coletados">
+          <h2>Dados coletados</h2>
+          <p>
+            O Localia pode lidar com diferentes tipos de informações conforme os recursos utilizados. Isso pode incluir conteúdos fornecidos por você dentro do app, arquivos necessários para funcionamento local, preferências de uso, configurações do aplicativo e dados técnicos mínimos para execução de funcionalidades no dispositivo.
+          </p>
+          <p>
+            Em determinadas situações, o app também pode baixar modelos de IA, recursos auxiliares ou arquivos relacionados ao funcionamento de recursos locais. Esses elementos podem ser armazenados no aparelho para permitir uso posterior, inclusive offline.
+          </p>
+          <p>
+            Esta política não pressupõe a coleta de categorias de dados além daquelas necessárias para os recursos efetivamente usados no app. Se uma funcionalidade não exigir determinado acesso ou informação, ela pode simplesmente não utilizar esse dado.
+          </p>
+        </section>
+
+        <section id="uso-dos-dados">
+          <h2>Como os dados são usados</h2>
+          <p>
+            As informações tratadas pelo Localia podem ser usadas para permitir o funcionamento do aplicativo, manter preferências do usuário, executar tarefas localmente, disponibilizar agentes especializados, organizar arquivos necessários ao uso do app e melhorar a experiência de utilização dentro dos limites técnicos da aplicação.
+          </p>
+          <p>
+            A qualidade, o estilo e a utilidade das respostas ou saídas geradas podem variar de acordo com o modelo de IA escolhido, com os recursos disponíveis no dispositivo e com o contexto fornecido por você. Por isso, o app não garante que toda resposta seja completa, precisa ou adequada a finalidades específicas.
+          </p>
+        </section>
+
+        <section id="armazenamento-local">
+          <h2>Armazenamento local no dispositivo</h2>
+          <p>
+            Parte importante do funcionamento do Localia pode depender do armazenamento local de dados no próprio aparelho. Isso pode incluir arquivos do aplicativo, conteúdos criados ou processados por você, preferências, cache, históricos locais, modelos baixados e outros recursos necessários para o uso contínuo do app.
+          </p>
+          <p>
+            O volume e o tipo de dados armazenados localmente podem variar conforme as funcionalidades utilizadas. Como esse armazenamento ocorre no dispositivo, a disponibilidade e a integridade desses dados também podem depender das configurações do sistema operacional, do espaço disponível e das ações realizadas por você no aparelho.
+          </p>
+        </section>
+
+        <section id="ia-local">
+          <h2>Uso de modelos de IA executados localmente no aparelho</h2>
+          <p>
+            O Localia pode utilizar modelos de IA executados localmente, o que significa que parte do processamento pode acontecer diretamente no dispositivo, inclusive sem conexão ativa com a internet em algumas situações. Esse desenho pode reduzir a dependência de processamento remoto para determinados recursos, mas não elimina todas as limitações técnicas ou operacionais.
+          </p>
+          <p>
+            Para viabilizar esse funcionamento, o app pode baixar modelos de IA e arquivos relacionados para uso local. O desempenho, o consumo de armazenamento, o tempo de resposta e a qualidade dos resultados podem variar conforme o modelo escolhido, o hardware disponível e a versão do aplicativo.
+          </p>
+          <div class="note">
+            O uso local de IA não deve ser interpretado, por si só, como garantia absoluta de privacidade, segurança, precisão ou ausência de transmissão de dados em todos os cenários. A forma de tratamento das informações pode depender da funcionalidade utilizada e das condições técnicas de uso.
+          </div>
+        </section>
+
+        <section id="permissoes">
+          <h2>Permissões do app</h2>
+          <p>
+            O Localia pode solicitar permissões do dispositivo apenas quando isso for necessário para recursos específicos, como acesso a arquivos, armazenamento ou outras capacidades do sistema operacional compatíveis com as funções do aplicativo.
+          </p>
+          <p>
+            A concessão, a recusa ou a revogação dessas permissões pode afetar o funcionamento de determinadas funcionalidades. Sempre que possível, recomendamos que você revise as permissões diretamente nas configurações do seu aparelho para entender quais acessos estão ativos.
+          </p>
+        </section>
+
+        <section id="compartilhamento">
+          <h2>Compartilhamento de dados</h2>
+          <p>
+            Com base nas informações atualmente fornecidas sobre o produto, esta política não descreve compartilhamento rotineiro de dados com parceiros, anunciantes ou plataformas de terceiros para fins comerciais. Ainda assim, isso não deve ser interpretado como declaração ampla ou permanente sobre toda e qualquer situação técnica futura.
+          </p>
+          <p>
+            Caso versões futuras do app passem a envolver novos fluxos de integração, sincronização ou processamento externo, esta política poderá ser atualizada para refletir essas mudanças de maneira mais precisa.
+          </p>
+        </section>
+
+        <section id="seguranca">
+          <h2>Segurança</h2>
+          <p>
+            Buscamos adotar medidas razoáveis para reduzir riscos e promover um uso mais seguro do aplicativo, considerando a arquitetura do produto e os recursos disponíveis. No entanto, nenhum sistema, dispositivo ou método de armazenamento oferece garantia absoluta contra falhas, acessos indevidos, perda de dados ou vulnerabilidades.
+          </p>
+          <p>
+            Você também tem papel importante na proteção das suas informações, especialmente ao manter o dispositivo atualizado, controlar o acesso físico ao aparelho e revisar permissões e arquivos armazenados localmente.
+          </p>
+        </section>
+
+        <section id="direitos">
+          <h2>Direitos do usuário</h2>
+          <p>
+            Dependendo da sua localização e da legislação aplicável, você pode ter direitos relacionados a informações pessoais tratadas no contexto do uso do app, como solicitar esclarecimentos, revisar dados mantidos localmente por você, gerenciar permissões e pedir exclusão de conteúdos sob seu controle.
+          </p>
+          <p>
+            Como parte do funcionamento do Localia ocorre diretamente no dispositivo, algumas ações de controle podem ser exercidas pelo próprio usuário dentro do app, nas configurações do sistema ou pela remoção de arquivos e dados armazenados localmente, quando isso for tecnicamente possível.
+          </p>
+        </section>
+
+        <section id="retencao">
+          <h2>Retenção e exclusão de dados</h2>
+          <p>
+            O tempo de retenção de dados pode variar conforme a natureza da informação, a funcionalidade usada e a permanência desses arquivos no próprio dispositivo. Conteúdos, preferências, cache, modelos baixados e outros dados locais podem permanecer armazenados até que sejam removidos pelo app, pelo sistema operacional ou por você.
+          </p>
+          <p>
+            A exclusão do aplicativo nem sempre implica, em todos os cenários e dispositivos, a remoção imediata de todos os dados relacionados. Por isso, quando aplicável, pode ser necessário revisar manualmente arquivos locais, backups do sistema ou áreas de armazenamento associadas ao app.
+          </p>
+        </section>
+
+        <section id="alteracoes">
+          <h2>Alterações nesta política</h2>
+          <p>
+            Esta Política de Privacidade pode ser ajustada periodicamente para refletir mudanças no aplicativo, em seus recursos ou em entendimentos sobre o seu funcionamento. Quando isso acontecer, a data de “Última atualização” desta página será revisada.
+          </p>
+          <p>
+            Recomendamos consultar esta política de tempos em tempos para acompanhar a versão mais recente publicada.
+          </p>
+        </section>
+
+        <section id="contato">
+          <h2>Contato</h2>
+          <p>
+            Se você tiver dúvidas, comentários ou solicitações relacionadas a esta Política de Privacidade ou ao uso do Localia, utilize o canal de contato oficial associado ao app ou ao repositório em que esta política estiver publicada.
+          </p>
+          <p>
+            Se você desejar, este trecho pode ser atualizado depois com um e-mail ou outro canal de atendimento específico.
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      Localia
+    </footer>
+  </main>
+</body>
+</html>
