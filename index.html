@@ -7,19 +7,24 @@
   <title>Política de Privacidade | Localia</title>
   <style>
     :root {
-      --bg: #f4f6f8;
+      --bg: #fff8f7;
+      --bg-accent: #fff1ef;
       --surface: #ffffff;
-      --surface-soft: #eef3f0;
-      --text: #1f2933;
-      --muted: #52606d;
-      --line: #d9e2ec;
-      --brand: #1f6f5f;
-      --brand-soft: #dff3ed;
-      --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-      --radius-lg: 24px;
-      --radius-md: 16px;
-      --radius-sm: 10px;
-      --max-width: 960px;
+      --surface-soft: #fff4f2;
+      --surface-muted: #fffafa;
+      --text: #2f2629;
+      --muted: #6f6267;
+      --line: #ecd9de;
+      --brand: #f5536c;
+      --brand-deep: #d8465e;
+      --brand-soft: #ffe3e7;
+      --brand-soft-strong: #ffd2da;
+      --shadow: 0 24px 60px rgba(157, 57, 78, 0.10);
+      --radius-xl: 32px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --max-width: 980px;
     }
 
     * {
@@ -32,163 +37,224 @@
 
     body {
       margin: 0;
-      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Avenir Next", "Nunito Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(31, 111, 95, 0.10), transparent 28%),
-        linear-gradient(180deg, #f8fbfa 0%, var(--bg) 100%);
+        radial-gradient(circle at top left, rgba(245, 83, 108, 0.11), transparent 26%),
+        radial-gradient(circle at bottom right, rgba(244, 91, 115, 0.10), transparent 22%),
+        linear-gradient(180deg, var(--bg-accent) 0%, var(--bg) 42%, #fffdfd 100%);
       line-height: 1.7;
     }
 
     .page {
       width: min(100% - 32px, var(--max-width));
       margin: 0 auto;
-      padding: 32px 0 64px;
+      padding: 24px 0 64px;
     }
 
     .hero {
-      background: linear-gradient(145deg, #12352e 0%, #1f6f5f 100%);
+      background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.16), transparent 24%),
+        linear-gradient(145deg, #f45b73 0%, #f5536c 58%, #ef4a64 100%);
       color: #ffffff;
-      border-radius: var(--radius-lg);
-      padding: 40px 28px;
+      border-radius: var(--radius-xl);
+      padding: 44px 30px 36px;
       box-shadow: var(--shadow);
       position: relative;
       overflow: hidden;
     }
 
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(120deg, rgba(255, 255, 255, 0.08), transparent 45%),
+        repeating-linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.04) 0,
+          rgba(255, 255, 255, 0.04) 14px,
+          transparent 14px,
+          transparent 28px
+        );
+      pointer-events: none;
+    }
+
     .hero::after {
       content: "";
       position: absolute;
-      inset: auto -80px -80px auto;
-      width: 220px;
-      height: 220px;
+      inset: auto -62px -72px auto;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.10);
+      filter: blur(4px);
     }
 
     .eyebrow {
       display: inline-block;
       margin: 0 0 14px;
-      padding: 6px 12px;
+      padding: 7px 13px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.14);
-      font-size: 0.92rem;
-      letter-spacing: 0.02em;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      line-height: 1.1;
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      position: relative;
+      z-index: 1;
     }
 
     .subtitle {
-      max-width: 700px;
-      margin: 16px 0 0;
-      font-size: 1.05rem;
-      color: rgba(255, 255, 255, 0.9);
+      max-width: 720px;
+      margin: 18px 0 0;
+      font-size: 1.03rem;
+      color: rgba(255, 247, 249, 0.92);
+      position: relative;
+      z-index: 1;
     }
 
     .update-box {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      margin-top: 22px;
-      padding: 12px 16px;
+      margin-top: 24px;
+      padding: 13px 17px;
       border-radius: var(--radius-sm);
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 248, 249, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.20);
       font-weight: 600;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(4px);
     }
 
     .layout {
       display: grid;
       grid-template-columns: 1fr;
       gap: 24px;
-      margin-top: 24px;
+      margin-top: 22px;
     }
 
     .card,
     .toc {
       background: var(--surface);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-lg);
       box-shadow: var(--shadow);
-      border: 1px solid rgba(217, 226, 236, 0.7);
+      border: 1px solid rgba(236, 217, 222, 0.9);
     }
 
     .toc {
-      padding: 22px;
+      padding: 24px 22px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 248, 249, 0.98) 100%);
     }
 
     .toc h2 {
       margin-top: 0;
-      font-size: 1.05rem;
+      margin-bottom: 14px;
+      font-size: 1rem;
+      color: #7d3c49;
+      letter-spacing: 0.02em;
     }
 
     .toc ul {
       list-style: none;
       padding: 0;
-      margin: 14px 0 0;
+      margin: 0;
       display: grid;
-      gap: 10px;
+      gap: 8px;
     }
 
     .toc a {
-      color: var(--brand);
+      display: block;
+      color: var(--brand-deep);
       text-decoration: none;
       font-weight: 600;
+      padding: 10px 12px;
+      border-radius: 12px;
+      transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
     }
 
     .toc a:hover,
     .toc a:focus {
-      text-decoration: underline;
+      background: var(--brand-soft);
+      color: #ba3950;
+      transform: translateX(2px);
+      outline: none;
     }
 
     .content {
-      padding: 28px;
+      padding: 32px 28px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 250, 250, 0.98) 100%);
     }
 
     section + section {
-      margin-top: 28px;
-      padding-top: 28px;
+      margin-top: 30px;
+      padding-top: 30px;
       border-top: 1px solid var(--line);
     }
 
     h2 {
       margin: 0 0 12px;
-      font-size: 1.35rem;
-      color: #183640;
+      font-size: 1.38rem;
+      color: #38262d;
+      letter-spacing: -0.02em;
     }
 
     p {
       margin: 0 0 14px;
       color: var(--text);
+      font-size: 1rem;
     }
 
     strong {
-      color: #102a43;
+      color: #872f40;
     }
 
     .note {
       margin-top: 16px;
-      padding: 16px 18px;
+      padding: 18px 18px 18px 20px;
       border-left: 4px solid var(--brand);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      background: var(--surface-soft);
-      color: #24404a;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      background: linear-gradient(180deg, var(--surface-soft) 0%, var(--surface-muted) 100%);
+      color: #544046;
+      box-shadow: inset 0 0 0 1px rgba(245, 83, 108, 0.08);
+    }
+
+    time,
+    a {
+      color: inherit;
+    }
+
+    ::selection {
+      background: rgba(245, 83, 108, 0.18);
     }
 
     footer {
       text-align: center;
       color: var(--muted);
-      font-size: 0.95rem;
-      margin-top: 28px;
-      padding-top: 8px;
+      font-size: 0.92rem;
+      margin-top: 26px;
+      padding: 8px 0 0;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
     @media (min-width: 860px) {
       .layout {
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 270px 1fr;
         align-items: start;
       }
 
@@ -201,17 +267,26 @@
     @media (max-width: 640px) {
       .page {
         width: min(100% - 20px, var(--max-width));
-        padding-top: 20px;
+        padding-top: 14px;
         padding-bottom: 40px;
       }
 
       .hero {
-        padding: 28px 20px;
+        padding: 30px 20px 26px;
       }
 
       .content,
       .toc {
         padding: 22px 18px;
+      }
+
+      .subtitle,
+      p {
+        font-size: 0.98rem;
+      }
+
+      h2 {
+        font-size: 1.26rem;
       }
     }
   </style>
